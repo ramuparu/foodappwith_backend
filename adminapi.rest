@@ -1,0 +1,21 @@
+###
+POST http://localhost:8000/admin/vandor
+Content-Type: application/json 
+
+{
+    "name" : "first restaurant",
+    "ownerName" : "ABC",
+    "foodType" : ["veg","non-veg"],
+    "pincode" : "400058",
+    "address" : "bandra",
+    "phone" : "8787455485",
+    "email" : "malla123@gamil.com",
+    "password" : "malla123"
+}
+
+### Get vendor details 
+GET  http://localhost:8000/admin/vandors
+
+### get vendor based on id 
+GET  http://localhost:8000/admin/vandor/6236fe7ccf941d815e9660ca
+

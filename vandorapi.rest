@@ -1,0 +1,54 @@
+### 
+POST http://localhost:8000/vendor/login
+Content-Type: application/json
+
+{
+   "email" : "malla123@gamil.com",
+   "password" : "malla123"
+}
+
+### get admin profile
+GET http://localhost:8000/vendor/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmlyc3QgcmVzdGF1cmFudCIsIl9pZCI6IjYyMzg1MzY5OWFjMTQyOTUzODMzMjcwMiIsImZvb2RUeXBlIjpbInZlZyIsIm5vbi12ZWciXSwiZW1haWwiOiJtYWxsYTEyM0BnYW1pbC5jb20iLCJpYXQiOjE2NDc4NjIxMDEsImV4cCI6MTY0Nzk0ODUwMX0.rCoJretC6Wn3qUmZtrzZ0JCtQqebpIwQEOUN_-jBWVE
+
+### update user profile
+PUT http://localhost:8000/vendor/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmlyc3QgcmVzdGF1cmFudCIsIl9pZCI6IjYyMzg1MzY5OWFjMTQyOTUzODMzMjcwMiIsImZvb2RUeXBlIjpbInZlZyIsIm5vbi12ZWciXSwiZW1haWwiOiJtYWxsYTEyM0BnYW1pbC5jb20iLCJpYXQiOjE2NDc4NjIxMDEsImV4cCI6MTY0Nzk0ODUwMX0.rCoJretC6Wn3qUmZtrzZ0JCtQqebpIwQEOUN_-jBWVE
+
+{
+   "name" : "rayalaseema ruchulu",
+   "foodType" : ["chinese","spanish"],
+   "address" : "hitech city",
+   "phone" : "7899094536"
+}
+
+### update service
+PATCH  http://localhost:8000/vendor/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmlyc3QgcmVzdGF1cmFudCIsIl9pZCI6IjYyMzg1MzY5OWFjMTQyOTUzODMzMjcwMiIsImZvb2RUeXBlIjpbInZlZyIsIm5vbi12ZWciXSwiZW1haWwiOiJtYWxsYTEyM0BnYW1pbC5jb20iLCJpYXQiOjE2NDc4NjIxMDEsImV4cCI6MTY0Nzk0ODUwMX0.rCoJretC6Wn3qUmZtrzZ0JCtQqebpIwQEOUN_-jBWVE
+
+### add foods
+POST   http://localhost:8000/vendor/food
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmlyc3QgcmVzdGF1cmFudCIsIl9pZCI6IjYyMzg1MzY5OWFjMTQyOTUzODMzMjcwMiIsImZvb2RUeXBlIjpbInZlZyIsIm5vbi12ZWciXSwiZW1haWwiOiJtYWxsYTEyM0BnYW1pbC5jb20iLCJpYXQiOjE2NDc4NjIxMDEsImV4cCI6MTY0Nzk0ODUwMX0.rCoJretC6Wn3qUmZtrzZ0JCtQqebpIwQEOUN_-jBWVE
+
+
+{
+   "name" : "second ruchulu",
+   "description" : "tastes another level",
+   "category" : "korean",
+
+   "foodType" : "veg",
+   "readyTime" : 1,
+   "price" : 1000
+}
+
+### get foods by login user
+GET    http://localhost:8000/vendor/foods
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmlyc3QgcmVzdGF1cmFudCIsIl9pZCI6IjYyMzg1MzY5OWFjMTQyOTUzODMzMjcwMiIsImZvb2RUeXBlIjpbInZlZyIsIm5vbi12ZWciXSwiZW1haWwiOiJtYWxsYTEyM0BnYW1pbC5jb20iLCJpYXQiOjE2NDc4NjIxMDEsImV4cCI6MTY0Nzk0ODUwMX0.rCoJretC6Wn3qUmZtrzZ0JCtQqebpIwQEOUN_-jBWVE
+
+
+
+
+
+
